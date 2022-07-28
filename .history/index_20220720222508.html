@@ -1,0 +1,2623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Platform</title>
+    <link
+      rel="shortcut icon"
+      href="https://hhhkungfu.tv/wp-content/uploads/2021/12/1-copy.png"
+      type="image/x-icon"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <!-- OWL CAROUSEL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ---aos-- -->
+    <!-- <link rel="stylesheet" href="aos-2/dist/aos.css"> -->
+    <!-- APP CSS -->
+    <!-- <link rel="stylesheet" href="form/form_style.css"> -->
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- NAV -->
+      <div class="nav-wrapper">
+        <div class="container">
+          <div class="nav">
+            <a href="#" class="logo">
+              <i class="bx bx-movie-play bx-tada main-color"></i>Mov<span
+                class="main-color"
+                >i</span
+              >e - Plat<span class="main-color">F</span>orm
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+              <li><a href="" class="nav-link active">Trang Chủ</a></li>
+              <li><a href="#new" class="nav-link">Phim Mới</a></li>
+              <li><a href="#series" class="nav-link">Phim Hay</a></li>
+              <li><a href="#anime" class="nav-link">Phim Lẻ</a></li>
+              <li class="nav-item--type">
+                <a class="nav-link nav-link--type">
+                  <span class="nav-link--type-titel">Thể Loại</span>
+                  <!-- <i class="nav-link-icon fa fa-caret-down dropdown__caret"></i> -->
+                  <i class="nav-link-icon fa fa-caret-down"></i>
+                </a>
+                <ul class="type-list">
+                  <li class="type-item">
+                    <a
+                      href="./movieGenre/actionMovie.html"
+                      class="type-item--link"
+                      >Phim Hành Động</a
+                    >
+                  </li>
+                  <li class="type-item">
+                    <a
+                      href="./movieGenre/humorousMovie.html"
+                      class="type-item--link"
+                      >Phim Hài Hước</a
+                    >
+                  </li>
+                  <li class="type-item">
+                    <a
+                      href="./movieGenre/FictionMovie.html"
+                      class="type-item--link"
+                      >Phim Viễn Tưởng</a
+                    >
+                  </li>
+                  <li class="type-item">
+                    <a
+                      href="./movieGenre/detectiveMovie.html"
+                      class="type-item--link"
+                      >Phim Trinh Thám</a
+                    >
+                  </li>
+                  <li class="type-item">
+                    <a
+                      href="./movieGenre/adventureMovie.html"
+                      class="type-item--link"
+                      >Phim Phiêu Lưu</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="./contact/contact.html" class="nav-link">Liên Hệ</a>
+              </li>
+              <li class="nav-menu--active">
+                <a class="custom-btn btn-11 hover-active">
+                  <span>Đăng Nhập</span>
+                </a>
+              </li>
+              <li class="nav-menu--active custom-btn-sigup">
+                <a class="custom-btn btn-11 hover-active btn-sigup">
+                  <span>Đăng Ký</span>
+                </a>
+              </li>
+            </ul>
+            <!-- MOBILE MENU TOGGLE -->
+            <div class="hamburger-menu" id="hamburger-menu">
+              <div class="hamburger"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END NAV -->
+
+      <!-- HERO SECTION -->
+      <div class="hero-section">
+        <!-- HERO SLIDE -->
+        <div class="hero-slide">
+          <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+            <!-- SLIDE ITEM -->
+            <div class="hero-slide-item">
+              <img src="./images/marvel2.png" alt="" />
+              <div class="overlay"></div>
+              <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                  <div class="item-content-title top-down">
+                    <p class="item-content-title--color">Avengers Endgame</p>
+                  </div>
+                  <ul class="movie-infos top-down delay-2">
+                    <li class="movie-info">
+                      <i class="bx bxs-star"></i>
+                      <span>8.5</span>
+                    </li>
+                    <li class="movie-info">
+                      <i class="bx bxs-time"></i>
+                      <span>160 mins</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>HD</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>18+</span>
+                    </li>
+                  </ul>
+                  <div class="item-content-description top-down delay-4">
+                    Avengers: Hồi kết là phim điện ảnh siêu anh hùng Mỹ ra mắt
+                    năm 2019, do Marvel Studios sản xuất và Walt Disney Studios
+                    Motion Pictures phân phối
+                  </div>
+                  <div class="item-action top-down delay-6">
+                    <a
+                      href="./detail/eveng.html"
+                      class="custom-btn block btn-11"
+                    >
+                      <i class="bx bxs-right-arrow"></i>
+                      <span>Xem Ngay</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END SLIDE ITEM -->
+            <!-- SLIDE ITEM -->
+            <div class="hero-slide-item">
+              <img src="./images/avatar.jpg" alt="" />
+              <div class="overlay"></div>
+              <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                  <div class="item-content-title top-down">
+                    <p class="item-content-title--color">Avatar</p>
+                  </div>
+                  <ul class="movie-infos top-down delay-2">
+                    <li class="movie-info">
+                      <i class="bx bxs-star"></i>
+                      <span>9.5</span>
+                    </li>
+                    <li class="movie-info">
+                      <i class="bx bxs-time"></i>
+                      <span>130 mins</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>HD</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>16+</span>
+                    </li>
+                  </ul>
+                  <div class="item-content-description top-down delay-4">
+                    Avatar là phim điện ảnh Mỹ thuộc thể loại khoa học viễn
+                    tưởng và sử thi, dự kiến ra mắt năm 2022. Phim do James
+                    Cameron đạo diễn và hãng 20th Century Studios sản xuất. Đây
+                    sẽ là phim thứ hai trong loạt phim Avatar, sau phần một cùng
+                    tên năm 2009.
+                  </div>
+                  <div class="item-action top-down delay-6">
+                    <a
+                      href="./detail/avatar.html"
+                      class="custom-btn block btn-11"
+                    >
+                      <i class="bx bxs-right-arrow"></i>
+                      <span>Xem Ngay</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END SLIDE ITEM -->
+
+            <!-- SLIDE ITEM -->
+            <div class="hero-slide-item">
+              <img src="./images/wanda-banner.jpg" alt="" />
+              <div class="overlay"></div>
+              <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                  <div class="item-content-title top-down">
+                    <div class="item-content-title--color">WandaVision</div>
+                  </div>
+                  <ul class="movie-infos top-down delay-2">
+                    <li class="movie-info">
+                      <i class="bx bxs-star"></i>
+                      <span>9.5</span>
+                    </li>
+                    <li class="movie-info">
+                      <i class="bx bxs-time"></i>
+                      <span>120 mins</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>HD</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>16+</span>
+                    </li>
+                  </ul>
+                  <div class="item-content-description top-down delay-4">
+                    WandaVision, series trực tuyến đầu tiên của Marvel trên
+                    Disney+, mở đầu như phim sitcom hài thập niên 1950. Tại thị
+                    trấn Westview ở ngoại ô nước Mỹ, một đôi vợ chồng chung sống
+                    hạnh phúc.
+                  </div>
+                  <div class="item-action top-down delay-6">
+                    <a
+                      href="./detail/WandaVision.html"
+                      class="custom-btn block btn-11"
+                    >
+                      <i class="bx bxs-right-arrow"></i>
+                      <span>Xem Ngay</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END SLIDE ITEM -->
+            <!-- SLIDE ITEM -->
+            <div class="hero-slide-item">
+              <img src="./images/Star-Wars-The-Rise-of-Skywalker.jpg" alt="" />
+              <div class="overlay"></div>
+              <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                  <div class="item-content-title top-down">
+                    <p class="item-content-title--color">Star Wars</p>
+                  </div>
+                  <ul class="movie-infos top-down delay-2">
+                    <li class="movie-info">
+                      <i class="bx bxs-star"></i>
+                      <span>9.5</span>
+                    </li>
+                    <li class="movie-info">
+                      <i class="bx bxs-time"></i>
+                      <span>130 mins</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>HD</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>16+</span>
+                    </li>
+                  </ul>
+                  <div class="item-content-description top-down delay-4">
+                    Star Wars là loạt tác phẩm hư cấu sử thi không gian của Mỹ
+                    sáng tạo bởi George Lucas, tập trung chủ yếu vào một loạt
+                    các phim điện ảnh được công chiếu kể từ năm 1977. Loạt phim
+                    kể về những cuộc phiêu lưu của các nhân vật khác nhau tại
+                    một thiên hà xa xôi.
+                  </div>
+                  <div class="item-action top-down delay-6">
+                    <a
+                      href="./detail/star.html"
+                      class="custom-btn block btn-11"
+                    >
+                      <i class="bx bxs-right-arrow"></i>
+                      <span>Xem Ngay</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END SLIDE ITEM -->
+            <!-- SLIDE ITEM -->
+            <div class="hero-slide-item">
+              <img src="./images/transformer2.jpg" alt="" />
+              <div class="overlay"></div>
+              <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                  <div class="item-content-title top-down">
+                    <p class="item-content-title--color">TRANSFOMER</p>
+                  </div>
+                  <ul class="movie-infos top-down delay-2">
+                    <li class="movie-info">
+                      <i class="bx bxs-star"></i>
+                      <span>9.5</span>
+                    </li>
+                    <li class="movie-info">
+                      <i class="bx bxs-time"></i>
+                      <span>130 mins</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>HD</span>
+                    </li>
+                    <li class="movie-info">
+                      <span>16+</span>
+                    </li>
+                  </ul>
+                  <div class="item-content-description top-down delay-4">
+                    Robot đại chiến là phim điện ảnh hành động khoa học viễn
+                    tưởng của Mỹ năm 2007 dựa trên dòng đồ chơi cùng tên của
+                    Hasbro.
+                  </div>
+                  <div class="item-action top-down delay-6">
+                    <a
+                      href="./detail/transfom.html"
+                      class="custom-btn block btn-11"
+                    >
+                      <i class="bx bxs-right-arrow"></i>
+                      <span>Xem Ngay</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END SLIDE ITEM -->
+          </div>
+        </div>
+        <!-- END HERO SLIDE -->
+      </div>
+
+      <!-- ------END-SEARCH------- -->
+      <!-- LATEST MOVIES SECTION -->
+      <div class="section" id="new">
+        <div class="container form-flex">
+          <div class="form-search">
+            <input placeholder="Tên phim .." class="s_input" /><button
+              id="submit_button"
+              class="b_button"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <!-- -------- text liner----- -->
+          <div class="contact-fp-wrap section-header">
+            <p class="booton-text">Mới Nhất</p>
+          </div>
+          <!-- --- End--text--liner--- -->
+
+          <div class="movies-slide carousel-nav-center owl-carousel" id="test">
+            <!-- MOVIE ITEM -->
+            <a href="./detail/dau_pha_tk.html" class="movie-item">
+              <img
+                src="./images/cartoons/Dau-Pha-Thuong-Khung-OVA-3.webp"
+                alt=""
+              />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Đấu phá thương khung</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>10</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>160 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>18+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+
+            <!-- MOVIE ITEM -->
+            <a href="" class="movie-item">
+              <img src="./images/movies/theatre-dead.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Theatre of the dead</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="./detail/tinh_than_bien.html" class="movie-item">
+              <img src="./images/cartoons/Tinh-Than-Bien-4.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Tinh thần biến</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="" class="movie-item">
+              <img src="./images/movies/call.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Call</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="./detail/vinh_sinh.html" class="movie-item">
+              <img src="./images/cartoons/Vinh-Sinh.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Vĩnh sinh</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.8</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>190 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>15+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="" class="movie-item">
+              <img src="./images/movies/transformer.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Transformer</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="" class="movie-item">
+              <img src="./images/movies/resident-evil.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Resident Evil</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="./detail/pham_nhan_tt.html" class="movie-item">
+              <img src="./images/cartoons/Pham-Nhan-Tu-Tien-3.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Phàm nhân tu tiên</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.1</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>100 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>18+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="" class="movie-item">
+              <img src="./images/movies/captain-marvel.png" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Captain Marvel</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="" class="movie-item">
+              <img src="./images/movies/hunter-killer.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Hunter Killer</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="" class="movie-item">
+              <img src="./images/movies/blood-shot.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Bloodshot</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+          </div>
+        </div>
+      </div>
+      <!-- END LATEST MOVIES SECTION -->
+
+      <!-- LATEST SERIES SECTION -->
+      <div class="section" id="series">
+        <div class="container">
+          <div class="section-header">
+            <p class="booton-text">Xem Nhiều</p>
+          </div>
+          <div class="movies-slide carousel-nav-center owl-carousel">
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/series/supergirl.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Supergirl</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="./detail/tinh_hai_kysi.html" class="movie-item">
+              <img src="./images/cartoons/Tinh-Hai-Ky-Si.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Tinh Hài kỵ Sĩ</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.0</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>180 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>18+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/series/star-trek.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Star Trek</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="./detail/liet_duong.html" class="movie-item">
+              <img src="./images/cartoons/Liet-Duong-Thien-Dao-1.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Liệt Dương Thiên Đạo</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="./detail/tamgiac.html" class="movie-item">
+              <img src="./images/cartoons/Tam-Giac.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Tâm Giác</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/series/the-falcon.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">
+                  The Falcon And The Winter Soldier
+                </h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/series/wanda.png" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Wanda Vision</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+          </div>
+        </div>
+      </div>
+      <!-- END LATEST SERIES SECTION -->
+
+      <!-- LATEST CARTOONS SECTION -->
+      <div class="section" id="anime">
+        <div class="container">
+          <div class="section-header">
+            <p class="booton-text">PHIM LẺ</p>
+          </div>
+          <div class="movies-slide carousel-nav-center owl-carousel">
+            <!-- MOVIE ITEM -->
+            <a href="./detail/dau_pha_tk.html" class="movie-item">
+              <img src="./images/movies/bat-man.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Batman</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>10</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>160 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>18+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="./detail/pham_nhan_tt.html" class="movie-item">
+              <img src="./images/cartoons/Pham-Nhan-Tu-Tien-3.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Phàm nhân tu tiên</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.1</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>100 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>18+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/slider-detail/avatar.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Avatar</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+
+            <!-- MOVIE ITEM -->
+            <a href="./detail/tinh_than_bien.html" class="movie-item">
+              <img src="./images/cartoons/Tinh-Than-Bien-4.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Tinh thần biến</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img
+                src="./images/slider-detail/Avengers_Endgame_bia_teaser.jpg"
+                alt=""
+              />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Avengers Endgame</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="./detail/vinh_sinh.html" class="movie-item">
+              <img src="./images/cartoons/Vinh-Sinh.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Vĩnh sinh</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.8</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>190 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>15+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+
+            <!-- MOVIE ITEM -->
+            <a href="./detail/hoa_giang_ho_bln.html" class="movie-item">
+              <img src="./images/cartoons/HGH-Bat-Luong-Nhan-5.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Họa giang hồ bất lương nhân</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/cartoons/croods.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Croods</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/cartoons/Du-Hiep-Chien-Ky.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Du hiệp chiến kỳ</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/cartoons/dragon.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Dragonball</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/cartoons/Thon-Phe-Tinh-Khong.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Thôn phệ tinh không</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/cartoons/over-the-moon.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Over The Moon</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="./detail/pham_nhan_tt.html" class="movie-item">
+              <img src="./images/cartoons/Pham-Nhan-Tu-Tien-3.webp" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Phàm Nhân tu tiên</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/cartoons/your-name.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Your Name</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="#" class="movie-item">
+              <img src="./images/cartoons/coco.jpg" alt="" />
+              <div class="movie-item-content">
+                <h4 class="movie-item-title">Coco</h4>
+                <ul class="movie-infos">
+                  <li class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>9.5</span>
+                  </li>
+                  <li class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>120 mins</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>HD</span>
+                  </li>
+                  <li class="movie-info">
+                    <span>16+</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+          </div>
+        </div>
+      </div>
+      <!-- END LATEST CARTOONS SECTION -->
+
+      <!-- TABs MOVIE SECTION -->
+      <div class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="booton-text">Lịch chiếu</p>
+          </div>
+
+          <div class="showtime">
+            <div class="tab-list">
+              <div class="tab-item is-active" data-tab="1">Thứ 2</div>
+              <div class="tab-item" data-tab="2">Thứ 3</div>
+              <div class="tab-item" data-tab="3">Thứ 4</div>
+              <div class="tab-item" data-tab="4">Thứ 5</div>
+              <div class="tab-item" data-tab="5">Thứ 6</div>
+              <div class="tab-item" data-tab="6">Thứ 7</div>
+              <div class="tab-item" data-tab="7">Chủ nhật</div>
+            </div>
+          </div>
+          <!-- ----THỨ 2----- -->
+          <div class="showtime-list show-active" data-tab="1">
+            <div class="row">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="./detail/dau_pha_tk.html" class="movie-item">
+                  <img
+                    src="./images/cartoons/Dau-Pha-Thuong-Khung-OVA-3.webp"
+                    alt=""
+                  />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Demon Slayer</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/demon-slayer.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Demon Slayer</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/Du-Hiep-Chien-Ky.webp" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Du hiệp chiến kỳ</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/mandalorian.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">mandalorian</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/movies/bat-man.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Batman</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="./detail/hoa_giang_ho_bln.html" class="movie-item">
+                  <img
+                    src="./images/cartoons/HGH-Bat-Luong-Nhan-5.webp"
+                    alt=""
+                  />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">
+                      Họa giang hồ bất lương nhân
+                    </h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+            </div>
+            <div class="row showtime-mr">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/supergirl.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">supergirl</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/the-falcon.webp" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">The falcon</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ----HẾT THỨ 2------ -->
+
+          <!-- -----THỨ 3  -->
+          <div class="showtime-list" data-tab="2">
+            <div class="row reverse">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img
+                    src="./images/cartoons/Dau-Pha-Thuong-Khung-OVA-3.webp"
+                    alt=""
+                  />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Demon Slayer</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/demon-slayer.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Demon Slayer</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/Du-Hiep-Chien-Ky.webp" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Du hiệp chiến kỳ</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/mandalorian.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">mandalorian</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/movies/bat-man.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Batman</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="./detail/hoa_giang_ho_bln.html" class="movie-item">
+                  <img
+                    src="./images/cartoons/HGH-Bat-Luong-Nhan-5.webp"
+                    alt=""
+                  />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">
+                      Họa giang hồ bất lương nhân
+                    </h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+            </div>
+            <div class="row showtime-mr">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/Nguyen-Long-2.webp" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Nguyên Long 2</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/Son-Ha-Kiem-Tam.webp" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Sơn Hà Kiếm Tâm</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ---- HẾT THỨ 3--- -->
+          <!-- ----THỨ 4----- -->
+          <div class="showtime-list" data-tab="3">
+            <div class="row">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/start-trek.jpeg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Start trek</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/demon-slayer.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Demon Slayer</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/Tinh-Ha-Chi-Ton.webp" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Tinh hà chí tôn</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/mandalorian.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">mandalorian</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/movies/blood-shot.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Blood short</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="./detail/hoa_giang_ho_bln.html" class="movie-item">
+                  <img
+                    src="./images/cartoons/HGH-Bat-Luong-Nhan-5.webp"
+                    alt=""
+                  />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">
+                      Họa giang hồ bất lương nhân
+                    </h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+            </div>
+            <div class="row showtime-mr">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/supergirl.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">supergirl</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/the-falcon.webp" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">The falcon</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ----HẾT THỨ 4------ -->
+          <!-- ----THỨ 5----- -->
+          <div class="showtime-list" data-tab="3">
+            <div class="row reverse">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/start-trek.jpeg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Start trek</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/your-name.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Yourn name</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/Tinh-Ha-Chi-Ton.webp" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Tinh hà chí tôn</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/mandalorian.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">mandalorian</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/penthouses.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Penthouses</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/the-falcon.webp" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">The falcon</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+            </div>
+          </div>
+          <!-- ----HẾT THỨ 5------ -->
+
+          <!-- ----THỨ 6----- -->
+          <div class="showtime-list" data-tab="4">
+            <div class="row">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/start-trek.jpeg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Start trek</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/your-name.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Yourn name</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/Tinh-Ha-Chi-Ton.webp" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Tinh hà chí tôn</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/mandalorian.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">mandalorian</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/penthouses.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Penthouses</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+
+              <!-- ----end-item--- -->
+            </div>
+          </div>
+          <!-- ----HẾT THỨ 6------ -->
+
+          <!-- ----THỨ 7----- -->
+          <div class="showtime-list" data-tab="5">
+            <div class="row">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/start-trek.jpeg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Start trek</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/movies/captain-marvel.png" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Captain</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/coco.jpg" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Coco</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/supergirl.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Supergirl</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/penthouses.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Penthouses</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+
+              <!-- ----end-item--- -->
+            </div>
+          </div>
+          <!-- ----HẾT THỨ 7------ -->
+
+          <!-- ----cn----- -->
+          <div class="showtime-list" data-tab="6">
+            <div class="row reverse">
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/the-falcon.webp" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">The falcon</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/movies/end-game.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">End game</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/cartoons/Thon-Phe-Tinh-Khong.webp" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Thôn phệ tinh không</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="./detail/vinh_sinh.html" class="movie-item">
+                  <img src="./images/cartoons/Vinh-Sinh.webp" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Vĩnh sinh</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="#" class="movie-item">
+                  <img src="./images/series/penthouses.jpg" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Penthouses</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+              <!-- ----item---- -->
+              <div class="col-2 col-md-4 col-sm-4">
+                <a href="./detail/tinh_than_bien.html" class="movie-item">
+                  <img src="./images/cartoons/Tinh-Than-Bien-4.webp" alt="" />
+                  <div class="movie-item-content">
+                    <h4 class="movie-item-title">Tinh thần biến</h4>
+                    <ul class="movie-infos">
+                      <li class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </li>
+                      <li class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>HD</span>
+                      </li>
+                      <li class="movie-info">
+                        <span>16+</span>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <!-- ----end-item--- -->
+            </div>
+          </div>
+          <!-- ----HẾT THỨ 6------ -->
+        </div>
+      </div>
+      <!-- END TABs MOVIE SECTION -->
+
+      <!-- PRICING SECTION -->
+
+      <!-- END PRICING SECTION -->
+
+      <!-- FOOTER SECTION -->
+      <footer
+        class="section footer-bg"
+        data-aos="slide-up"
+        data-aos-delay="100"
+        data-aos-duration="700"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-md-6 col-sm-4">
+              <div class="footer-content">
+                <a href="#" class="logo">
+                  <i class="bx bx-movie-play bx-tada main-color"></i>Mov<span
+                    class="main-color"
+                    >i</span
+                  >e - Plat<span class="main-color">F</span>orm
+                </a>
+                <p></p>
+                <div class="social-list">
+                  <a href="#" class="social-item">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                  <a href="#" class="social-item">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                  <a href="#" class="social-item">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-md-6 col-sm-8">
+              <div class="row">
+                <div class="col-3 col-md-6 col-sm-6">
+                  <div class="content">
+                    <p><b>Movie Platform</b></p>
+                    <ul class="footer-menu">
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">My profile</a></li>
+                      <li><a href="#">Pricing plans</a></li>
+                      <li><a href="#">Contacts</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-6">
+                  <div class="content">
+                    <p><b>Browse</b></p>
+                    <ul class="footer-menu">
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">My profile</a></li>
+                      <li><a href="#">Pricing plans</a></li>
+                      <li><a href="#">Contacts</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-6">
+                  <div class="content">
+                    <p><b>Help</b></p>
+                    <ul class="footer-menu">
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">My profile</a></li>
+                      <li><a href="#">Pricing plans</a></li>
+                      <li><a href="#">Contacts</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-6">
+                  <div class="content">
+                    <p><b>Download app</b></p>
+                    <ul class="footer-menu">
+                      <li>
+                        <a href="#">
+                          <img src="./images/google-play.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./images/app-store.png" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- END FOOTER SECTION -->
+      <!-- --DAY-NIGHT-------- -->
+      <div class="day-night">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+      <!-- --DAY-NIGHT-------- -->
+      <!-- BACK TO TOP -->
+      <a href="#" class="backtotop">
+        <i class="bx bx-chevron-up"></i>
+      </a>
+      <!--END BACK TO TOP -->
+    </div>
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- OWL CAROUSEL -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- APP SCRIPT -->
+    <script src="app.js"></script>
+  </body>
+</html>

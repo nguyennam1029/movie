@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="../grid.css">
+</head>
+<body>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="../index.html" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Mov<span class="main-color">i</span>e - Plat<span class="main-color">F</span>orm
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="" class="nav-link">Trang Chủ</a></li>
+                    <li><a href="#" class="nav-link">Phim Mới</a></li>
+                    <li><a href="#test" class="nav-link">Phim Hoạt Hình</a></li>
+                    <li><a href="#" class="nav-link">Phim Hay</a></li>
+                    <li><a href="#" class="nav-link">Liên Hệ</a></li>
+                    <li class="nav-menu--active">
+                        <a href="../form/form_login.html" class="custom-btn btn-11 hover-active">
+                            <span>Đăng Nhập</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+   
+        <div class="container" id="playMovie">
+            <div class="section" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-md-4 col-sm-4">
+                            <h3 class="main-video--title">Đấu phá thương khung</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/qGLkpBwNC0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div>
+                        <div class="col-3 col-md-4 col-sm-4">
+                            <div class="list-item">
+                                <h3 class="play-movie--heading">Xem Nhiều</h3>
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/cartoons/Dau-Pha-Thuong-Khung-OVA-3.webp" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Đấu phá thương khung</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/movies/theatre-dead.jpg" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Theatre of the dead</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/cartoons/HGH-Bat-Luong-Nhan-5.webp" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Họa giang hồ chi bất lương nhân - Chi bất lực 2022</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/movies/transformer.jpg" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Transformer</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/movies/resident-evil.jpg" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Resident Evil</p>
+                                </a>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="play-movie">
+                <div class="main-video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qGLkpBwNC0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="main-video--title">Đấu phá thương khung</h3>
+                </div>
+                
+            </div> -->
+        </div>
+ 
+
+    <script>
+        $(document).ready(() => {
+    $('#hamburger-menu').click(() => {
+        $('#hamburger-menu').toggleClass('active')
+        $('#nav-menu').toggleClass('active')
+    })
+})
+    </script>
+</body>
+</html>

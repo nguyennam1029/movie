@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="../grid.css">
+</head>
+<body>
+    <style>
+        .cast-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cast-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: ease 0.25s;
+        }
+        .cast-item img:hover {
+            transform: scale(1.2)
+        }
+        .main-video--title {
+            
+        }
+        .cast-info {
+            margin-left: 20px;
+        }
+        .cast-name {
+            transition: ease 0.25s ;
+        }
+        .cast-name:hover {
+            background: linear-gradient(to right,#f4a347,#f64988);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-box-decoration-break: clone;
+        }
+        .cast-titel {
+
+        }
+        .storyline-info {
+            word-spacing: 5px;
+    color: #bcbcbc;
+    line-height: 28px;
+    text-align: justify;
+        }
+        .photo-detail {
+            padding: 20px 0;
+        }
+
+        .budget-item--titel {
+            font-size: 20px;
+            background: linear-gradient(to right,#f4a347,#f64988);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+        }
+        .budget-item--price {
+            font-size: 15px;
+            margin: 8px 0;
+        }
+
+        .specs-item {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            padding: 10px 0;
+        }
+        .specs-item--titel {
+            font-size: 18px;
+            margin-right: 16px;
+            background: linear-gradient(to right,#f4a347,#f64988);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+        }
+        .specs-item--price {
+            font-size: 15px;
+        
+        }
+        .specs-item--price >a {
+            /* font-size: 15px; */
+        }
+
+        .movie-img {
+            position: relative;
+        }
+        .movie-img img {
+            width: 225px 315px;
+            display: block;
+            border-radius: 8px;
+        }
+        .movie-link {
+            position: absolute;
+            left: 50%;
+            /* bottom: 10%; */
+            transform: translateX(-50%);
+            bottom: 10px;
+            padding: 8px;
+            width: 60%;
+            border-radius: 5px;
+            text-align: center;
+            border: none;
+            background-size: 300% 100%;
+           -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            background-image: linear-gradient(to right, #ffbb00, #e43603, #ff6290, #ff5000);
+            box-shadow: 0 4px 15px 0 rgb(229 66 10 / 75%);
+        }
+        .movie-link:hover {
+            background-position: 100% 0;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .moive-info--name {
+            color: #cacaca;
+            font-size: 25px;
+            font-weight: 500;
+            transition: all 0.25s ease-in;
+            background: linear-gradient(to right,#ff8a00,#ff2070);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 600;
+    /* padding-top: 8px; */
+    user-select: none;
+        }
+        .moive-info--time {
+            display: flex;
+            align-items: center;
+        }
+        .moive-info--icon {
+            color: #cacaca;
+            font-size: 14px;
+            padding-right: 8px;
+        }
+
+        .list {
+            list-style: none;
+            padding-top: 6px;
+        }
+        .item {
+            color: #cacaca;
+            font-size: 14px;
+            padding: 4px 0;
+
+        }
+        .item>span {
+            color: #e0e0e0;
+            font-size: 15px;
+            padding-right: 4px;
+            width: 88px;
+        }
+        .item >a {
+            color: #82b0da;
+
+
+        }
+    </style>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="../index.html" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Mov<span class="main-color">i</span>e - Plat<span class="main-color">F</span>orm
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Trang Chủ</a></li>
+                    <li><a href="#" class="nav-link">Phim Mới</a></li>
+                    <li><a href="#test" class="nav-link">Phim Hoạt Hình</a></li>
+                    <li><a href="#" class="nav-link">Phim Hay</a></li>
+                    <li><a href="#" class="nav-link">Liên Hệ</a></li>
+                    <li class="nav-menu--active">
+                        <a href="../form/form_login.html" class="custom-btn btn-11 hover-active">
+                            <span>Đăng Nhập</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+   
+        <div class="container" id="playMovie">
+        
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-md-8 col-sm-12">
+                            <div class="row">
+                                <div class="col-4 col-sm-12">
+                                    
+                                        <div class="movie-img">
+                                            <img src="../images/cartoons/Dau-Pha-Thuong-Khung-OVA-3.webp" alt="">
+                                            <a href="#" class="movie-link">Xem Phim</a>
+                                        </div>
+                                </div>  
+                                <div class="col-8 col-sm-12">
+                                    <div class="moive-info">
+                                        <h4 class="moive-info--name">
+                                            Đấu phá thương khung
+                                        </h4>
+                                        <p class="moive-info--time">
+                                            <i class="moive-info--icon fa-solid fa-clock-rotate-left"></i>
+                                            <span>22 Phút</span>
+                                        </p>
+                                        <ul class="list">
+                                            <li class="item"><span>Thể loại :</span>Cổ Trang</li>
+                                            <li class="item"><span>Trạng thái :</span> Tập 28 VietSub</li>
+                                            <li class="item"><span>Sắp Chiếu :</span> Tập 29 VietSub</li>
+                                            <li class="item"><span>Đạo diễn :</span> Doãn Đào</li>
+                                            <li class="item"><span>Diễn viên :</span> Tiêu viêm, Phàm băng băng,...</li>
+                                            <li class="item"><span>Bài hát :</span> <a href="https://www.nhaccuatui.com/bai-hat/sau-biet-ly-dau-pha-thuong-khung-ost-va.1vEU1Lpt7rly.html#:~:text=L%E1%BB%9Di%20b%C3%A0i%20h%C3%A1t%3A%20Sau%20Bi%E1%BB%87t,%C4%90%E1%BA%A5u%20Ph%C3%A1%20Th%C6%B0%C6%A1ng%20Khung%20OST)">Sau biệt ly</a></li>
+                                            
+                                        </ul>
+                                    </div>
+
+                                </div>      
+                            </div>
+                                
+                            
+                            <!-- --------cast-dàn diễn viên----------- -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="main-video--title">Dàn diễn viên</h3>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- -cast--item---------------------- -->
+                                    <div class="col-4 col-sm-6">
+                                        <a href="" class="cast-item">
+                                            <img src="../images/cast/cast2.jpg" alt="">
+                                            <div class="cast-info">
+                                                <h4 class="cast-name">Tiêu viêm</h4>
+                                                <span class="cast-titel">Đời như đùa</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- -cast--item---------------------- -->
+                                    <div class="col-4 col-sm-6">
+                                        <a href="" class="cast-item">
+                                            <img src="../images/cast/cast1.jpg" alt="">
+                                            <div class="cast-info">
+                                                <h4 class="cast-name">Tiêu yên</h4>
+                                                <span class="cast-titel">Đời như đùa</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- -cast--item---------------------- -->
+                                    <div class="col-4 col-sm-6">
+                                        <a href="" class="cast-item">
+                                            <img src="../images/cast/cast3.jpg" alt="">
+                                            <div class="cast-info">
+                                                <h4 class="cast-name">Vân vận</h4>
+                                                <span class="cast-titel">Đời như đùa</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- -cast--item---------------------- -->
+                                    <div class="col-4 col-sm-6">
+                                        <a href="" class="cast-item">
+                                            <img src="../images/cast/cast4.jpg" alt="">
+                                            <div class="cast-info">
+                                                <h4 class="cast-name">Thanh vân</h4>
+                                                <span class="cast-titel">Đời như đùa</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <!-- -cast--item---------------------- -->
+                                     <div class="col-4 col-sm-6">
+                                        <a href="" class="cast-item">
+                                            <img src="../images/cast/cast5.jpg" alt="">
+                                            <div class="cast-info">
+                                                <h4 class="cast-name">Hắc ưng</h4>
+                                                <span class="cast-titel">Đời như đùa</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <!-- -cast--item---------------------- -->
+                                     <div class="col-4 col-sm-6">
+                                        <a href="" class="cast-item">
+                                            <img src="../images/cast/cast6.jpg" alt="">
+                                            <div class="cast-info">
+                                                <h4 class="cast-name">Dược lão</h4>
+                                                <span class="cast-titel">Đời như đùa</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                     <!-- -cast--item---------------------- -->
+                                     <div class="col-4 col-sm-6">
+                                        <a href="" class="cast-item">
+                                            <img src="../images/cast/cast7.jpg" alt="">
+                                            <div class="cast-info">
+                                                <h4 class="cast-name">Hỏa linh diệp</h4>
+                                                <span class="cast-titel">Đời như đùa</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                           
+                                </div>
+                            <!-- --------story-line-cốt truyện---------- -->
+                                
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="main-video--title">Cốt truyện</h3>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="storyline">
+                                            <p class="storyline-info">
+                                                -Câu chuyện của truyện Đấu Phá Thương Khung xảy ra tại Đấu Khí Đại Lục. Nhân vật chính của chúng ta là Tiêu Viêm. Hắn từ 1 thiên tài vang danh Gia Mã Đế Quốc trở thành một phế vật bị mọi người xa lánh, khinh bỉ. Những người trước đây có thể quỳ dưới chân nịnh bộ vị Thiếu Tộc Trưởng thì bây giờ sẵn sàng nói ra những lời chế giễu, vũ nhục Tiêu Viêm. Hắn chẳng thể làm gì ngay cả khi bị nàng dâu tương lai hủy hôn ước. Nhưng cũng vì vậy mà cái tinh thần, cái sức mạnh ý chí của Tiêu Viêm mới bộc phát. Nói ” tam thập niên hà đông, tam thập niên hà tây” về ý chí của Tiêu Viêm quả thật là không sai.
+                                                <br>
+                                                -Sau đó nhờ cơ duyên, Tiêu Viêm tìm ra lí do mình trở thành phế vật, bái Dược Trần- linh hồn 1 cường giả làm sư phụ. Tác giả đưa đưa Tiêu Viêm từ khi là 1 tồn tại nhỏ nhoi, 1 thiên tài chưa kịp lóe sáng đã vụt tắt và trong mảng đen khi tắt ấy, thiên tài đó lại tìm thấy ánh sáng đẹp đẽ, khác lạ hơn trước kia, đến khi trở thành đỉnh cao nhất của Đấu Khí đại lục.
+                                                <br>
+                                                -Có thể kể tới hệ thống tu luyện đấu khí, chiến đấu bằng đấu kĩ hay hệ thống tu luyện linh hồn mới lạ. Ngoài ra Đấu Phá Thương Khung còn có hệ thống Dị Hỏa vô cùng đặc biệt. Đảm bảo bạn sẽ thích thú khi Tiêu Viêm đạt được dị hỏa và chứng kiến công dụng của chúng.
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            <!-- --------photo-ảnh truyện---------- -->
+                            <!-- LATEST MOVIES SECTION -->
+                            <div>
+                                <div class="container">
+                                    <!-- -------- text liner----- -->
+                                    <div class="photo-detail">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3 class="main-video--title">Hình ảnh</h3>
+                                                
+                                            </div>
+                                        </div>
+                                       
+                                         
+                                      </div>
+                                    <!-- --- End--text--liner--- -->
+                                    
+                                    <div class="movies-slide2 carousel-nav-center owl-carousel" id="test">
+                                        <!-- start MOVIE ITEM -->
+                                      
+                                         <a href="#" class="movie-item">
+                                            <img src="../images/cast/cast3.jpg" alt="">
+                                            
+                                        </a>
+                                        <!-- END MOVIE ITEM -->
+                                        <!-- start MOVIE ITEM -->
+                                      
+                                        <a href="#" class="movie-item">
+                                            <img src="../images/cast/cast2.jpg" alt="">
+                                            
+                                        </a>
+                                        <!-- END MOVIE ITEM -->
+                                        
+                                        <!-- start MOVIE ITEM -->
+                                      
+                                        <a href="#" class="movie-item">
+                                            <img src="../images/cast/slider6.jpg "alt="">
+                                            
+                                        </a>
+                                        <!-- END MOVIE ITEM -->
+                                        <!-- start MOVIE ITEM -->
+                                      
+                                        <a href="#" class="movie-item">
+                                            <img src="../images/cast/cast6.jpg" alt="">
+                                            
+                                        </a>
+                                        <!-- END MOVIE ITEM -->
+                                        <!-- start MOVIE ITEM -->
+                                      
+                                        <a href="#" class="movie-item">
+                                            <img src="../images/cast/slider5.jpg" alt="">
+                                            
+                                        </a>
+                                        <!-- END MOVIE ITEM -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- --------budget diễn viên----------- -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="main-video--title">Doanh thu</h3>
+                                    
+                                </div>
+                                <div class="row" style="margin: 20px 0;">
+                                    <!-- -budget--item---------------------- -->
+                                   <div class="col-6">
+                                       <div class="budget-item">
+                                            <h5 class="budget-item--titel">Ngân sách</h5>
+                                            <p class="budget-item--price">$90,000,000 (Ước lượng)</p>
+                                       </div>
+                                   </div>
+                                   
+                                   <!-- -budget--item---------------------- -->
+                                   <div class="col-6">
+                                    <div class="budget-item">
+                                         <h5 class="budget-item--titel">Trung quốc</h5>
+                                         <p class="budget-item--price">$123,000,000</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="budget-item">
+                                         <h5 class="budget-item--titel">Việt Nam</h5>
+                                         <p class="budget-item--price">$199,000,000</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="budget-item">
+                                         <h5 class="budget-item--titel">Gross US & Canada</h5>
+                                         <p class="budget-item--price">$99,000,000</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!-- --------timer diễn viên----------- -->
+                            
+    <!-- END LATEST MOVIES SECTION -->    
+                            </div>
+
+
+
+
+                            <!-- ------------xem nhiều-------- -->
+                        <div class="col-3 col-md-4 col-sm-12">
+                            <div class="list-item">
+                                <h3 class="play-movie--heading">Xem Nhiều</h3>
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/cartoons/Dau-Pha-Thuong-Khung-OVA-3.webp" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Đấu phá thương khung</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/movies/theatre-dead.jpg" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Theatre of the dead</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/cartoons/HGH-Bat-Luong-Nhan-5.webp" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Họa giang hồ chi bất lương nhân - Chi bất lực 2022</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/movies/transformer.jpg" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Transformer</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/movies/resident-evil.jpg" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Resident Evil</p>
+                                </a>
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/cartoons/Dau-Pha-Thuong-Khung-OVA-3.webp" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Đấu phá thương khung</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/movies/theatre-dead.jpg" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Theatre of the dead</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/cartoons/HGH-Bat-Luong-Nhan-5.webp" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Họa giang hồ chi bất lương nhân - Chi bất lực 2022</p>
+                                </a>
+                                <!-- ---item---  -->
+                                <a href="#" class="play-movie--link">
+                                    <img src="../images/movies/transformer.jpg" alt="" class="play-movie--img">
+                                    <p class="play-movie--name">Transformer</p>
+                                </a>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                
+            <!-- <div class="play-movie">
+                <div class="main-video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qGLkpBwNC0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="main-video--title">Đấu phá thương khung</h3>
+                </div>
+                
+            </div> -->
+        </div>
+        
+        <!-- FOOTER SECTION -->
+    <footer class="section footer-bg" data-aos = "slide-up" data-aos-delay = "100" data-aos-duration="700" >
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-4">
+                    <div class="content">
+                        <a href="#" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Mov<span class="main-color">i</span>e - Plat<span class="main-color">F</span>orm
+                            
+                        </a>
+                        <p>
+                            
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-4">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-4">
+                            <div class="content">
+                                <p><b>Movie Platform</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-4">
+                            <div class="content">
+                                <p><b>Browse</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-4">
+                            <div class="content">
+                                <p><b>Help</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-4">
+                            <div class="content">
+                                <p><b>Download app</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/google-play.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/app-store.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- OWL CAROUSEL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script src="../app.js"></script>
+    <!-- <script>
+        $(document).ready(() => {
+    $('#hamburger-menu').click(() => {
+        $('#hamburger-menu').toggleClass('active')
+        $('#nav-menu').toggleClass('active')
+    })
+}) -->
+    </script>
+</body>
+</html>
